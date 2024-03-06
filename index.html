@@ -5,27 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>shablon</title>
+    <title>Dom</title>
 </head>
 
 <body>
+
     <header class="header">
         <nav class="header__navbar container df">
             <div class="header__logo">
-                <a href="#">Logo</a>
+                <a href="#"><img src="./images/logo.svg" alt=""></a>
             </div>
             <ul class="header__list df">
                 <li class="header__item">
-                    <a href="#">Home</a>
+                    <a href="#">ГЛАВНАЯ</a>
                 </li>
                 <li class="header__item">
-                    <a href="#">About</a>
+                    <a href="#">МЕНЮ</a>
                 </li>
                 <li class="header__item">
-                    <a href="#">Service</a>
+                    <a href="#">О НАС</a>
                 </li>
                 <li class="header__item">
-                    <a href="#">Contact</a>
+                    <a href="#">БРОНЬ</a>
+                </li>
+                <li class="header__item header__savat">
+                    <a href="#"><img src="./images/savat.svg" alt=""></a>
+                </li>
+                <li class="header__item header__item__border">
+                    <div class="header__info__top df">
+                        <img src="./images/tel.svg" alt="">
+                        <a href="tel:+999-888-76-54">+999-888-76-54</a>
+                    </div>
+                    <div class="header__info__bottom">
+                        <a href="#">Свяжитесь с нами для <br>
+                            бронирования</a>
+                    </div>
+                </li>
+                <li class="header__item header__item__btn">
+                    <button class="header__btn">ЗАКАЗ СТОЛИКА</button>
                 </li>
                 <li class="header__item--close">
                     <span>X</span>
@@ -37,7 +54,170 @@
                 <span></span>
             </button>
         </nav>
+
     </header>
+    <main>
+        <div class="hero">
+            <div class="container hero__container">
+                <h3 class="hero__subtitle subtitle">
+                    Добро пожаловать в
+                </h3>
+                <h1 class="hero__title">
+                    Наш ресторан
+                </h1>
+                <div class="hero__info df">
+                    <span></span>
+                    <p class="hero__info__desc">
+                        ДОМ ЛУЧШЕЙ ЕДЫ
+                    </p>
+                    <span></span>
+                </div>
+                <button class="hero__btn">
+                    VIEW MENU
+                </button>
+            </div>
+        </div>
+        <section class="history">
+            <div class="container">
+                <div class="history__cards">
+                    <div class="history__card">
+                        <div class="history__img">
+                            <img src="./images/history.svg" alt="">
+                        </div>
+                        <h2 class="history__card__title">
+                            Магическая <span>Атмосфера</span>
+                        </h2>
+                        <p class="history__card__desc">
+                            В нашем заведении царит магическая атмосфера
+                            наполненная вкусными ароматами
+                        </p>
+                    </div>
+                    <div class="history__card">
+                        <div class="history__img">
+                            <img src="./images/history.svg" alt="">
+                        </div>
+                        <h2 class="history__card__title">
+                            Магическая <span>Атмосфера</span>
+                        </h2>
+                        <p class="history__card__desc">
+                            В нашем заведении царит магическая атмосфера
+                            наполненная вкусными ароматами
+                        </p>
+                    </div>
+                    <div class="history__card">
+                        <div class="history__img">
+                            <img src="./images/history.svg" alt="">
+                        </div>
+                        <h2 class="history__card__title">
+                            Магическая <span>Атмосфера</span>
+                        </h2>
+                        <p class="history__card__desc">
+                            В нашем заведении царит магическая атмосфера
+                            наполненная вкусными ароматами
+                        </p>
+                    </div>
+                </div>
+                <div class="history__items">
+                    <div class="history__item">
+                        <h2 class="history__subtitle subtitle">
+                            Наша <span>История</span>
+                        </h2>
+                        <p class="history__desc">
+                            Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана
+                            пришла основателям неожиданно.
+                            Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от
+                            ближайшего населенного пункта. Вдали
+                            от цивилизации и связи им пришлось навремя обустровать себе нехитрый быт, добывать и
+                            готовить себе еду.
+                        </p>
+                        <div class="history__price">
+                            <div class="history__info">
+                                <h4 class="history__name">
+                                    93
+                                </h4>
+                                <p class="history__info__desc">Напитки</p>
+                            </div>
+                            <div class="history__info">
+                                <h4 class="history__name">
+                                    93
+                                </h4>
+                                <p class="history__info__desc">Напитки</p>
+                            </div>
+                            <div class="history__info">
+                                <h4 class="history__name">
+                                    93
+                                </h4>
+                                <p class="history__info__desc">Напитки</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="history__item">
+                        <img src="./images/history_item.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="restaran">
+            <div class="container restaran__container">
+                <div class="restaran__item">
+                    <div class="restaran__title subtitle">
+                        Отпразднуйте в одном из
+                        самых лучших ресторанов.
+                    </div>
+                    <div class="restaran__desc">
+                        Только в этом месяце бизнес-ланч от 250 ₽
+                    </div>
+                </div>
+                <div class="restaran__item">
+                    <button class="restaran__btn">ЗАКАЗ СТОЛИКА</button>
+                </div>
+            </div>
+        </section>
+        <section class="menu container">
+            <h1 class="menu__title subtitle">
+                Наши <span>Блюда</span>
+            </h1>
+            <div class="menu__cards">
+                <div class="menu__left">
+                    <img src="./images/menu.svg" alt="">
+                </div>
+                <div class="menu__right">
+                    <div class="menu__collaction">
+                        <div class="menu__collaction__img">
+                            <img src="./images/menu1.svg" alt="">
+                        </div>
+                        <div class="menu__collaction__infos">
+                            <span>Гамбургер мини</span>
+                            <span>...................</span>
+                            <span>220 ₽</span>
+                        </div>
+                    </div>
+                    <div class="menu__collaction">
+                        <div class="menu__collaction__img">
+                            <img src="./images/menu1.svg" alt="">
+                        </div>
+                        <div class="menu__collaction__infos">
+                            <span>Гамбургер мини</span>
+                            <span>...................</span>
+                            <span>220 ₽</span>
+                        </div>
+                    </div>
+                    <div class="menu__collaction">
+                        <div class="menu__collaction__img">
+                            <img src="./images/menu1.svg" alt="">
+                        </div>
+                        <div class="menu__collaction__infos">
+                            <span>Гамбургер мини</span>
+                            <span>...................</span>
+                            <span>220 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
 </body>
 
 <script src="./js/main.js"></script>

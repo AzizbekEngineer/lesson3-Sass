@@ -4,17 +4,22 @@
     left: 0;
     z-index: 999;
     width: 100%;
-    background: $secondaryCl;
-    color: $primaryCl;
+    padding: 20px 0;
+    background: black;
+    color: white;
+
+
 
     .header__navbar {
         justify-content: space-between;
-        padding: 10px 0;
     }
 
     &__logo {
-        font-size: 30px;
-        font-weight: bold;
+        width: 80px;
+
+        img {
+            width: 100%;
+        }
     }
 
     &__list {
@@ -27,8 +32,8 @@
         transition: 0.5s;
 
         &:hover {
-            border-color: $hoverCl;
-            color: $hoverCl;
+            border-color: $orangCl;
+            color: $orangCl;
         }
 
     }
@@ -40,34 +45,54 @@
         cursor: pointer;
     }
 
+    &__item__border {
+        padding-left: 10px;
+        border-left: 1px solid white;
+        border-bottom: none;
+    }
+
+    &__info__top {
+        gap: 10px;
+        margin-bottom: 6px;
+    }
+
+    &__item__btn {
+        border: none;
+    }
+
+    &__btn {
+        @include btn()
+    }
+
     &__hamburger {
         display: none;
         flex-direction: column;
         gap: 5px;
-        background: $secondaryCl;
+        background: transparent;
 
         span {
             width: 25px;
             height: 3px;
-            background: $primaryCl;
+            background: $orangCl;
             border-radius: 2px;
         }
     }
 }
 
-@media (max-width:500px) {
+
+@media (max-width:910px) {
     .header {
         &__list {
             position: fixed;
             top: 0;
             left: -100%;
             width: 50%;
-            background: red;
+            background: #000002;
             height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            box-shadow: 0px 0px 10px $hoverCl;
+            box-shadow: 0px 0px 10px $orangCl;
             transition: 0.5s;
         }
 
@@ -83,7 +108,7 @@
         &__item--close {
             position: absolute;
             display: block;
-            color: white;
+            color: red;
             top: 15px;
             right: 20px;
         }
@@ -92,5 +117,17 @@
             left: -100%;
         }
 
+    }
+}
+
+@media (max-width:380px) {
+    .header {
+        &__list {
+            width: 80%;
+        }
+
+        &__logo {
+            width: 60px;
+        }
     }
 }

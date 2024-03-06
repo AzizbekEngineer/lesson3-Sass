@@ -1,0 +1,134 @@
+.hero {
+    display: flex;
+    align-items: flex-start;
+    background: url(../images/hero__back.svg)no-repeat center;
+    background-size: cover;
+}
+
+.hero__container {
+    // display: flex;
+    // flex-direction: column;
+    // // align-items: center;
+}
+
+.hero__subtitle {
+    padding: 200px 0 0;
+}
+
+.hero__title {
+    font-size: 80px;
+    line-height: 90px;
+    color: $orangCl;
+}
+
+.hero__info {
+    margin: 0 auto;
+    padding: 20px 0;
+    gap: 10px;
+    color: $secondaryCl;
+
+    &__desc {
+        font-size: 16px;
+        line-height: 20px;
+        color: $secondaryCl;
+    }
+
+    span {
+        width: 70px;
+        height: 4px;
+        background: $secondaryCl;
+    }
+}
+
+.hero__btn {
+    @include btn();
+    margin-bottom: 200px;
+    display: block;
+}
+
+@media (max-width:910px) {
+
+
+    .hero__subtitle {
+        padding: 120px 0 0;
+    }
+
+    .hero__title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .hero__info {
+        &__desc {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .hero__btn {
+        @include btn();
+        margin-bottom: 120px;
+    }
+
+}
+
+@media (max-width:555px) {
+    .hero__subtitle {
+        padding: 90px 0 0;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .hero__title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .hero__info {
+        padding: 15px 0;
+
+        &__desc {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        span {
+            width: 40px;
+        }
+    }
+
+    .hero__btn {
+        @include btn();
+        margin-bottom: 90px;
+    }
+}
+
+
+@media (max-width:380px) {
+    .hero__subtitle {
+        padding-top: 100px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .hero__title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .hero__btn {
+        @include btn();
+        margin-bottom: 90px;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .hero__info {
+        padding: 15px 0;
+
+        span {
+            width: 30px;
+        }
+    }
+
+}

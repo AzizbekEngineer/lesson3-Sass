@@ -1,0 +1,91 @@
+.restaran {
+    background: url(../images/restoran.svg) no-repeat center;
+    background-size: cover;
+    padding: 80px 0;
+    margin: 10px 0 50px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        max-width: 600px;
+        padding: 10px 0;
+    }
+
+    &__desc {
+        font-size: 24px;
+        line-height: 30px;
+        color: $secondaryCl;
+    }
+
+    &__btn {
+        @include btn();
+    }
+}
+
+@media (max-width: 1000px) {
+    .restaran {
+        &__title {
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        &__desc {
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width: 910px) {
+    .restaran {
+        &__title {
+            font-size: 24px;
+            line-height: 20px;
+        }
+
+        &__desc {
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        &__btn {
+            @include btn();
+            font-size: 16px;
+            padding: 10px 16px;
+        }
+    }
+}
+
+@media (max-width: 855px) {
+    .restaran {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .restaran {
+        padding: 40px 0;
+        margin-top: -10px;
+        margin-bottom: 20px;
+
+        &__title {
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        &__desc {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+}

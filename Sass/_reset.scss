@@ -4,7 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Open Sans';
 }
 
 a {
@@ -27,3 +27,10 @@ button {
     display: flex;
     align-items: center;
 }
+
+.subtitle {
+    font-size: 50px;
+    line-height: 57px;
+    color: $orangCl;
+}
+

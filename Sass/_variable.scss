@@ -1,3 +1,17 @@
-$primaryCl:black;
-$secondaryCl:white;
-$hoverCl:skyblue;
+$primaryCl: black;
+$secondaryCl: white;
+$hoverCl: skyblue;
+$orangCl: #FF7400;
+
+@mixin btn($bg: #FF7400, $cl: white, $size: 14px) {
+    background: $bg ;
+    color: $cl;
+    font-size: $size;
+    padding: 15px 20px;
+    transition: 0.4s;
+
+    &:hover {
+        color: $bg;
+        background: $cl;
+    }
+}
